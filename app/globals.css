@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: hsl(220 18% 99%);
+  --color-foreground: hsl(222 47% 11%);
+  --color-sidebar: hsl(220 14% 96%);
+  --color-sidebar-foreground: hsl(222 47% 11%);
+  --color-sidebar-muted: hsl(215 14% 42%);
+  --color-sidebar-border: hsl(220 13% 90%);
+  --color-sidebar-hover: hsl(220 12% 93%);
+  --color-sidebar-active: hsl(220 11% 91%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(222 47% 11%);
+  --color-primary: hsl(330 75% 48%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(211 35% 95%);
+  --color-secondary-foreground: hsl(222 47% 11%);
+  --color-muted: hsl(210 20% 93%);
+  --color-muted-foreground: hsl(215 16% 40%);
+  --color-accent: hsl(330 60% 94%);
+  --color-accent-foreground: hsl(330 75% 30%);
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(210 40% 98%);
+  --color-border: hsl(214 23% 88%);
+  --color-input: hsl(214 23% 88%);
+  --color-ring: hsl(330 75% 48%);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  min-height: 100vh;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+}
+
+.panel {
+  border-radius: 1rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-card);
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+}
